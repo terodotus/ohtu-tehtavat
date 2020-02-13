@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\ohtuvarasto.jar;%APP_HOME%\lib\guava-20.0.jar
 
 @rem Execute ohtuvarasto
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %OHTUVARASTO_OPTS%  -classpath "%CLASSPATH%" Main.Main %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %OHTUVARASTO_OPTS%  -classpath "%CLASSPATH%" ohtu.ohtuvarasto.Main %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
