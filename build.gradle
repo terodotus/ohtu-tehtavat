@@ -18,3 +18,10 @@ mainClassName = 'ohtu.Main'
 run{
     standardInput = System.in
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
