@@ -19,3 +19,9 @@ mainClassName = 'ohtuesimerkki.Main'
 run {
     standardInput = System.in
 }
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtuesimerkki.Main'
+    }
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtuesimerkki.StatisticsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-19T21:12:27" hostname="LAPTOP-LTEFMJNB" time="0.004">
+<testsuite name="ohtuesimerkki.StatisticsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-19T21:21:17" hostname="LAPTOP-LTEFMJNB" time="0.004">
   <properties/>
   <testcase name="pelaajalistaLoytyy" classname="ohtuesimerkki.StatisticsTest" time="0.004"/>
   <testcase name="konstruktoriToimii" classname="ohtuesimerkki.StatisticsTest" time="0.0"/>
