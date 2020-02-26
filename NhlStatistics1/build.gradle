@@ -32,3 +32,4 @@ jacocoTestReport {
         html.enabled true
     }
 }
+

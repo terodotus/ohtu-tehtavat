@@ -16,3 +16,7 @@ include 'services:webservice'
 */
 
 rootProject.name = 'RiippuvuuksienInjektointi1'
+
+run {
+    standardInput = System.in
+}

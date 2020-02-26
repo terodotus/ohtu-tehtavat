@@ -25,3 +25,7 @@ jacocoTestReport {
         html.enabled true
     }
 }
+
+run {
+    standardInput = System.in
+}
