@@ -1,3 +1,4 @@
 /.nb-gradle/
 /NhlStatistics1/.nb-gradle/
 gradle.properties
+/nhlreader/.nb-gradle/
