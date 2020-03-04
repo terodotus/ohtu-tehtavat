@@ -5,11 +5,18 @@
  */
 package ohtu.verkkokauppa;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author Tero
  */
+@Component
+
 public interface PankkiInterface {
+    @Autowired
+            
 
     boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa);
     

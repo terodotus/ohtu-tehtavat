@@ -5,12 +5,19 @@
  */
 package ohtu.verkkokauppa;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author Tero
  */
-public interface KauppaInterface {
+@Component
 
+
+public interface KauppaInterface {
+    @Autowired
+            
     void aloitaAsiointi();
 
     void lisaaKoriin(int id);

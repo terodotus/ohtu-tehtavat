@@ -5,13 +5,21 @@
  */
 package ohtu.verkkokauppa;
 
+
 import java.util.ArrayList;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+
 
 /**
  *
  * @author Tero
  */
 public interface KirjanpitoInterface {
+    @Autowired
+            
 
     ArrayList<String> getTapahtumat();
 
