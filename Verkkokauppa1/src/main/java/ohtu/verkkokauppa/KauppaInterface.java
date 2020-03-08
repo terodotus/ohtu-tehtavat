@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
  *
  * @author Tero
  */
+
+
 @Component
-
-
 public interface KauppaInterface {
     @Autowired
             

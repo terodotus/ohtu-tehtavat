@@ -7,6 +7,15 @@ public class Player {
     private int maalienMaara;
     private int syotot;
     private int pisteet;
+    private String nationality;
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 
     public int getPisteet() {
         return pisteet;

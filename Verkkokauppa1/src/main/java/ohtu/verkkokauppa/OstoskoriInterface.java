@@ -12,11 +12,10 @@ import org.springframework.stereotype.Component;
  *
  * @author Tero
  */
-@Component
 
+@Component
 public interface OstoskoriInterface {
     @Autowired
-            
 
     int hinta();
 

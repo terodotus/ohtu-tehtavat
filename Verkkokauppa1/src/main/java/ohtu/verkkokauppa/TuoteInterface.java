@@ -13,11 +13,8 @@ import org.springframework.stereotype.Component;
  * @author Tero
  */
 @Component
-
 public interface TuoteInterface {
     @Autowired
-            
-
     boolean equals(Object o);
 
     int getHinta();

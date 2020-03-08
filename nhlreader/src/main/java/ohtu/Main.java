@@ -5,10 +5,10 @@
  */
 package ohtu;
 
-import com/google/gson.Gson;
 
 import java.io.IOException;
-import apache.org.apache.http.client.fluent.Request;
+import org.apache.http.client.fluent.Request;
+import com.google.gson.Gson;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -24,7 +24,10 @@ public class Main {
         
         System.out.println("Oliot:");
         for (Player player : players) {
-            System.out.println(player);
+            if(player.getNationality().equals("FIN")){
+                System.out.println(player);
+            }
+            
         }   
     }
   

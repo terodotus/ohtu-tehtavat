@@ -79,7 +79,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\RiippuvuuksienInjektointi1.jar;%APP_HOME%\lib\guava-20.0.jar
+set CLASSPATH=%APP_HOME%\lib\RiippuvuuksienInjektointi1.jar;%APP_HOME%\lib\guava-20.0.jar;%APP_HOME%\lib\gson-2.8.6.jar
 
 @rem Execute RiippuvuuksienInjektointi1
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %RIIPPUVUUKSIEN_INJEKTOINTI1_OPTS%  -classpath "%CLASSPATH%" ohtu.Main %CMD_LINE_ARGS%

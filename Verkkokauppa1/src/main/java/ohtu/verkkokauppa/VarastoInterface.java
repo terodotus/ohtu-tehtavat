@@ -5,11 +5,17 @@
  */
 package ohtu.verkkokauppa;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
 /**
  *
  * @author Tero
  */
+@Component
 public interface VarastoInterface {
+    @Autowired
 
     Tuote haeTuote(int id);
 
