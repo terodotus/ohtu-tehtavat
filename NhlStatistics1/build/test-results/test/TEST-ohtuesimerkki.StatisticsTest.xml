@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtuesimerkki.StatisticsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-19T22:11:25" hostname="LAPTOP-LTEFMJNB" time="0.005">
+<testsuite name="ohtuesimerkki.StatisticsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-08T17:54:24" hostname="LAPTOP-LTEFMJNB" time="0.001">
   <properties/>
-  <testcase name="pelaajalistaLoytyy" classname="ohtuesimerkki.StatisticsTest" time="0.005"/>
+  <testcase name="pelaajalistaLoytyy" classname="ohtuesimerkki.StatisticsTest" time="0.001"/>
   <testcase name="konstruktoriToimii" classname="ohtuesimerkki.StatisticsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

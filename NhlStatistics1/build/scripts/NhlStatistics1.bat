@@ -79,7 +79,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\NhlStatistics1.jar;%APP_HOME%\lib\guava-20.0.jar
+set CLASSPATH=%APP_HOME%\lib\NhlStatistics1.jar;%APP_HOME%\lib\guava-20.0.jar;%APP_HOME%\lib\gson-2.8.6.jar;%APP_HOME%\lib\fluent-hc-4.5.11.jar;%APP_HOME%\lib\httpclient-4.5.11.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\httpcore-4.4.13.jar;%APP_HOME%\lib\commons-codec-1.11.jar
 
 @rem Execute NhlStatistics1
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %NHL_STATISTICS1_OPTS%  -classpath "%CLASSPATH%" ohtuesimerkki.Main %CMD_LINE_ARGS%
