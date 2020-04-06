@@ -15,6 +15,13 @@ public class Main {
     @Autowired
     public static void main(String[] args) {
         
+        Viitegeneraattori viitegen = new Viitegeneraattori();
+Kirjanpito kirjanpito      = new Kirjanpito();
+Varasto varasto            = new Varasto(kirjanpito);
+Pankki pankki              = new Pankki(kirjanpito);
+Kauppa kauppa              = new Kauppa(varasto, pankki, viitegen);
+
+/*        
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         
         Viitegeneraattori viitegen = ctx.getBean(Viitegeneraattori.class);
@@ -22,7 +29,7 @@ public class Main {
         Varasto varasto            = ctx.getBean(Varasto.class);
         Pankki pankki              = ctx.getBean(Pankki.class);
         Kauppa kauppa              = ctx.getBean(Kauppa.class);
-
+*/
         // kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
         kauppa.aloitaAsiointi();
         kauppa.lisaaKoriin(1);

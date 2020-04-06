@@ -35,7 +35,7 @@ public class Tuote implements TuoteInterface {
     @Autowired
     @Override
     public int getHinta() {
-        return this.getHinta();
+        return this.hinta;
     }
     @Autowired
     @Override
