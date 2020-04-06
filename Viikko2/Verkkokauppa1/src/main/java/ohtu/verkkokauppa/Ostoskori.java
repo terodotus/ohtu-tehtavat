@@ -9,28 +9,28 @@ import org.springframework.stereotype.Component;
 public class Ostoskori implements OstoskoriInterface {
     
     @Autowired
-    ArrayList<Tuote> tuotteet;
+    ArrayList<TuoteInterface> tuotteet;
 
     @Autowired
     public Ostoskori() {
         tuotteet = new ArrayList();
     }
-
+    @Autowired
     @Override
-    public void lisaa(Tuote t) {
+    public void lisaa(TuoteInterface t) {
         this.tuotteet.add(t);
     }
-
+    @Autowired
     @Override
-    public void poista(Tuote t) {
+    public void poista(TuoteInterface t) {
         this.tuotteet.remove(t);
     }
-
+    @Autowired
     @Override
     public int hinta() {
         int hinta = 0;
 
-        for (Tuote tuote : this.tuotteet) {
+        for (TuoteInterface tuote : this.tuotteet) {
             hinta += tuote.getHinta();
         }
         return hinta;

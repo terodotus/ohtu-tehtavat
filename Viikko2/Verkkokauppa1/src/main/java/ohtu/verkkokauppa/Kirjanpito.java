@@ -9,20 +9,20 @@ import org.springframework.stereotype.Component;
 public class Kirjanpito implements KirjanpitoInterface {
     
     @Autowired
-    private ArrayList<String> tapahtumat;
+    private List<String> tapahtumat;
     
     @Autowired
     public Kirjanpito() {
         tapahtumat = new ArrayList<String>();
     }
-    
+    @Autowired
     @Override
     public void lisaaTapahtuma(String tapahtuma) {
         tapahtumat.add(tapahtuma);
     }
-
+    @Autowired
     @Override
-    public ArrayList<String> getTapahtumat() {
+    public List<String> getTapahtumat() {
         return tapahtumat;
     }       
 }

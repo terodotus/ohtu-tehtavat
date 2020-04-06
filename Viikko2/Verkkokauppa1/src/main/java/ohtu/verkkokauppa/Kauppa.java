@@ -19,14 +19,6 @@ public class Kauppa implements KauppaInterface {
     private String kaupanTili;
 
     @Autowired
-    public Kauppa() {
-        this.varasto = new Varasto();
-        this.pankki = new Pankki();
-        this.viitegeneraattori = new Viitegeneraattori();
-        this.kaupanTili = "33333-44455";
-    }
-    
-    @Autowired
     public Kauppa(VarastoInterface varasto,PankkiInterface pankki,ViitegeneraattoriInterface viitegeneraattori){
         this.varasto=varasto;
         this.pankki=pankki;
@@ -34,26 +26,30 @@ public class Kauppa implements KauppaInterface {
         this.kaupanTili = "33333-44455";
     }
 
+    @Autowired
     @Override
     public void aloitaAsiointi() {
         this.ostoskori = new Ostoskori();
     }
 
+    @Autowired
     @Override
     public void poistaKorista(int id) {
-        Tuote t = this.varasto.haeTuote(id); 
+        TuoteInterface t = this.varasto.haeTuote(id); 
         this.varasto.palautaVarastoon(t);
     }
 
+    @Autowired
     @Override
     public void lisaaKoriin(int id) {
         if (this.varasto.saldo(id)>0) {
-            Tuote t = this.varasto.haeTuote(id);             
+            TuoteInterface t = this.varasto.haeTuote(id);             
             this.ostoskori.lisaa(t);
             this.varasto.otaVarastosta(t);
         }
     }
 
+    @Autowired
     @Override
     public boolean tilimaksu(String nimi, String tiliNumero) {
         int viite = viitegeneraattori.uusi();

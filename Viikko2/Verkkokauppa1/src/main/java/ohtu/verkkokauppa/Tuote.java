@@ -24,23 +24,23 @@ public class Tuote implements TuoteInterface {
     @Autowired
     @Override
     public boolean equals(Object o) {
-        Tuote t = (Tuote)o;
-        return id==t.id;
+        TuoteInterface t = (TuoteInterface)o;
+        return id==t.getId();
     }
     @Autowired
     @Override
     public int getId() {
-        return id;
+        return this.id;
     }
     @Autowired
     @Override
     public int getHinta() {
-        return hinta;
+        return this.getHinta();
     }
     @Autowired
     @Override
     public String toString() {
-        return nimi;
+        return this.nimi;
     }            
     
 }

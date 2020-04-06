@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public interface VarastoInterface {
     @Autowired
-    Tuote haeTuote(int id);
+    TuoteInterface haeTuote(int id);
     @Autowired
-    void otaVarastosta(Tuote t);
+    void otaVarastosta(TuoteInterface t);
     @Autowired
-    void palautaVarastoon(Tuote t);
+    void palautaVarastoon(TuoteInterface t);
     @Autowired
     int saldo(int id);
 }

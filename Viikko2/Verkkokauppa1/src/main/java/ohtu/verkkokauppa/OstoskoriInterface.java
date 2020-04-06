@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface OstoskoriInterface {
-    
+    @Autowired
     int hinta();
-
-    void lisaa(Tuote t);
-
-    void poista(Tuote t);
+    @Autowired
+    void lisaa(TuoteInterface t);
+    @Autowired
+    void poista(TuoteInterface t);
     
 }

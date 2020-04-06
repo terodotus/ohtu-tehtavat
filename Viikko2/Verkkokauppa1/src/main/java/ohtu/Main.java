@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
 
 @Component
 public class Main {
@@ -27,7 +30,7 @@ public class Main {
         kauppa.lisaaKoriin(3);
         kauppa.poistaKorista(1);
         kauppa.tilimaksu("Pekka Mikkola", "1234-12345");
-/*
+
         // seuraava asiakas
         kauppa.aloitaAsiointi();
         for (int i = 0; i < 24; i++) {
@@ -35,7 +38,7 @@ public class Main {
         }
 
         kauppa.tilimaksu("Arto Vihavainen", "3425-1652");
-*/
+
         // kirjanpito
         for (String tapahtuma : kirjanpito.getTapahtumat()) {
             System.out.println(tapahtuma);

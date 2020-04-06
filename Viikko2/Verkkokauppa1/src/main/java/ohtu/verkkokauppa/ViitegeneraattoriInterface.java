@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface ViitegeneraattoriInterface {
-    
+    @Autowired
     int uusi();
    
 }
