@@ -3,32 +3,30 @@
 import java.util.Scanner;
 
 public class Laskin {
+private IO io;
 
-    private Scanner lukija;
+<span class="nc" id="L8">    public Laskin(IO io) {</span>
+<span class="nc" id="L9">        this.io = io;</span>
+<span class="nc" id="L10">    }</span>
 
-<span class="nc" id="L9">    public Laskin() {</span>
-<span class="nc" id="L10">        lukija = new Scanner(System.in);</span>
-<span class="nc" id="L11">    }</span>
-    
     public void suorita(){
         while( true ) {
-<span class="nc" id="L15">            System.out.println(&quot;luku 1: &quot;);</span>
-<span class="nc" id="L16">            int luku1 = lukija.nextInt();</span>
-<span class="nc bnc" id="L17" title="All 2 branches missed.">            if ( luku1==-9999  ) return;</span>
-            
-<span class="nc" id="L19">            System.out.println(&quot;luku 2: &quot;);</span>
-<span class="nc" id="L20">            int luku2 = lukija.nextInt();</span>
-<span class="nc bnc" id="L21" title="All 2 branches missed.">            if ( luku2==-9999  ) return;</span>
-            
-<span class="nc" id="L23">            int vastaus = laskeSumma(luku1, luku2);</span>
-<span class="nc" id="L24">            System.out.println(&quot;summa: &quot;+ vastaus);</span>
-<span class="nc" id="L25">        }</span>
+<span class="nc" id="L14">            io.print(&quot;luku 1: &quot;);</span>
+<span class="nc" id="L15">            int luku1 = io.nextInt();</span>
+<span class="nc bnc" id="L16" title="All 2 branches missed.">            if ( luku1==-9999  ) return;</span>
+
+<span class="nc" id="L18">            io.print(&quot;luku 2: &quot;);</span>
+<span class="nc" id="L19">            int luku2 = io.nextInt();</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">            if ( luku2==-9999 ) return;</span>
+
+<span class="nc" id="L22">            int vastaus = laskeSumma(luku1, luku2);</span>
+<span class="nc" id="L23">            io.print(&quot;summa: &quot;+vastaus+&quot;\n&quot;);</span>
+<span class="nc" id="L24">        }</span>
     }
 
     private int laskeSumma(int luku1, int luku2) {
-<span class="nc" id="L29">        return luku1+luku2;</span>
-    }    
-   
-}
+<span class="nc" id="L28">        return luku1+luku2;</span>
+    }
 
+}
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
