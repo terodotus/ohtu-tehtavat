@@ -20,8 +20,8 @@ public class Main {
         Varasto varasto            = new Varasto(kirjanpito);
         Pankki pankki              = new Pankki(kirjanpito);
         Kauppa kauppa              = new Kauppa(varasto, pankki, viitegen);
-
-/*        
+/*
+        
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         
         Viitegeneraattori viitegen = ctx.getBean(Viitegeneraattori.class);
