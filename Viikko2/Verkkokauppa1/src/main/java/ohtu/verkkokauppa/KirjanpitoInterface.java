@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface KirjanpitoInterface {
-    @Autowired
+    
     List<String> getTapahtumat();
-    @Autowired
+    
     void lisaaTapahtuma(String tapahtuma);
     
 }

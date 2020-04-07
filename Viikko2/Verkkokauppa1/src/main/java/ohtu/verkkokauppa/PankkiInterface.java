@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface PankkiInterface {
-    @Autowired
+    
     boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa);
     
 }

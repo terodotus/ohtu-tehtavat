@@ -15,17 +15,17 @@ public class Ostoskori implements OstoskoriInterface {
     public Ostoskori() {
         tuotteet = new ArrayList();
     }
-    @Autowired
+    
     @Override
     public void lisaa(TuoteInterface t) {
         this.tuotteet.add(t);
     }
-    @Autowired
+    
     @Override
     public void poista(TuoteInterface t) {
         this.tuotteet.remove(t);
     }
-    @Autowired
+    
     @Override
     public int hinta() {
         int hinta = 0;

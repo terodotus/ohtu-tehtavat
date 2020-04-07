@@ -13,7 +13,7 @@ public class Viitegeneraattori implements ViitegeneraattoriInterface {
     public Viitegeneraattori(){
         this.seuraava = 1;    
     }
-    @Autowired
+    
     @Override
     public int uusi(){
         return seuraava++;

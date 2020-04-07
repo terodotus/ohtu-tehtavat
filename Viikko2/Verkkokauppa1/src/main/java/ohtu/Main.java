@@ -16,10 +16,10 @@ public class Main {
     public static void main(String[] args) {
         
         Viitegeneraattori viitegen = new Viitegeneraattori();
-Kirjanpito kirjanpito      = new Kirjanpito();
-Varasto varasto            = new Varasto(kirjanpito);
-Pankki pankki              = new Pankki(kirjanpito);
-Kauppa kauppa              = new Kauppa(varasto, pankki, viitegen);
+        Kirjanpito kirjanpito      = new Kirjanpito();
+        Varasto varasto            = new Varasto(kirjanpito);
+        Pankki pankki              = new Pankki(kirjanpito);
+        Kauppa kauppa              = new Kauppa(varasto, pankki, viitegen);
 
 /*        
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);

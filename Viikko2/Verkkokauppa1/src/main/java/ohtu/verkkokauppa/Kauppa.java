@@ -26,20 +26,20 @@ public class Kauppa implements KauppaInterface {
         this.kaupanTili = "33333-44455";
     }
 
-    @Autowired
+    
     @Override
     public void aloitaAsiointi() {
         this.ostoskori = new Ostoskori();
     }
 
-    @Autowired
+    
     @Override
     public void poistaKorista(int id) {
         TuoteInterface t = this.varasto.haeTuote(id); 
         this.varasto.palautaVarastoon(t);
     }
 
-    @Autowired
+    
     @Override
     public void lisaaKoriin(int id) {
         if (this.varasto.saldo(id)>0) {
@@ -49,7 +49,7 @@ public class Kauppa implements KauppaInterface {
         }
     }
 
-    @Autowired
+    
     @Override
     public boolean tilimaksu(String nimi, String tiliNumero) {
         int viite = viitegeneraattori.uusi();

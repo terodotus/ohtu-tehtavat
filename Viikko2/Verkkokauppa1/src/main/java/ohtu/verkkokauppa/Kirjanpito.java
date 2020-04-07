@@ -15,12 +15,12 @@ public class Kirjanpito implements KirjanpitoInterface {
     public Kirjanpito() {
         tapahtumat = new ArrayList<String>();
     }
-    @Autowired
+    
     @Override
     public void lisaaTapahtuma(String tapahtuma) {
         tapahtumat.add(tapahtuma);
     }
-    @Autowired
+    
     @Override
     public List<String> getTapahtumat() {
         return tapahtumat;
