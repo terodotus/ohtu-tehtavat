@@ -3,15 +3,10 @@ plugins {
 }
 
 apply plugin: 'java'
+
 apply plugin: 'application'
 
-mainClassName = 'ohtu.Main'
-
-jar {
-    manifest {
-        attributes 'Main-Class': 'ohtu.Main'
-    }
-}
+apply plugin: "jacoco" 
 
 repositories {
     jcenter()
@@ -26,6 +21,21 @@ dependencies {
     
 }
 
+mainClassName = 'ohtu.Main'
+
 run {
     standardInput = System.in
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtu.Main'
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
 }
