@@ -25,6 +25,14 @@ class IOStub implements IO {
     public void print(String m) {
         outputs.add(m);
     }
+    
+    @Test
+    public void yksiSummaOikein() {
+        IOStub io = new IOStub(1, 3, -9999);
+        new Laskin(io).suorita();
+        
+        assertEquals("summa: 4\n",io.outputs.get(2));
+    }
 }
 
 //    @Test
