@@ -1,3 +1,7 @@
+plugins {
+    id 'checkstyle'
+}
+
 apply plugin: 'java'
 
 apply plugin: 'application'
@@ -7,6 +11,13 @@ apply plugin: "jacoco"
 repositories {
     jcenter()
     mavenCentral()
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
 }
 
 dependencies {
@@ -20,7 +31,7 @@ mainClassName = 'ohtu.Main'
 
 jar {
     manifest {
-        attributes 'Main': 'ohtu.Main'
+        attributes 'Main-Class': 'ohtu.Main'
     }
 }
 
@@ -32,6 +43,12 @@ jacocoTestReport {
     reports {
         xml.enabled true
         html.enabled true
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it,
+                    exclude: ['main/**'])
+        }))
     }
 }
 

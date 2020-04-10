@@ -24,7 +24,7 @@ public class Varasto implements VarastoInterface {
     @Override
     public TuoteInterface haeTuote(int id){
         for (TuoteInterface t : this.saldot.keySet()) {
-            if ( t.getId()==id) {
+            if ( t.getId() == id) {
                 return t;
             } 
         }
@@ -38,14 +38,14 @@ public class Varasto implements VarastoInterface {
     
     @Override
     public void otaVarastosta(TuoteInterface t){        
-        this.saldot.put(t,  saldo(t.getId())-1 );
+        this.saldot.put(t, saldo(t.getId()) - 1 );
         kirjanpito.lisaaTapahtuma("otettiin varastosta "+t);
     }
     
     
     @Override
     public void palautaVarastoon(TuoteInterface t){
-        this.saldot.put(t,  saldo(t.getId())+1 );
+        this.saldot.put(t, saldo(t.getId()) + 1 );
         kirjanpito.lisaaTapahtuma("palautettiin varastoon "+t);
     }    
     

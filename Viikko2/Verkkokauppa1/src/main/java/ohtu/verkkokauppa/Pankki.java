@@ -12,7 +12,7 @@ public class Pankki implements PankkiInterface {
 
     @Autowired
     public Pankki(KirjanpitoInterface kirjanpito) {
-        this.kirjanpito=kirjanpito;
+        this.kirjanpito = kirjanpito;
     }
     
     @Override

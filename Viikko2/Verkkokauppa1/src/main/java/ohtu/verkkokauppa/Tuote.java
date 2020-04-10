@@ -25,7 +25,7 @@ public class Tuote implements TuoteInterface {
     @Override
     public boolean equals(Object o) {
         TuoteInterface t = (TuoteInterface)o;
-        return id==t.getId();
+        return id == t.getId();
     }
     
     @Override

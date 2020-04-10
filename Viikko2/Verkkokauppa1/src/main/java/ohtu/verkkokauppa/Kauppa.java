@@ -19,7 +19,7 @@ public class Kauppa implements KauppaInterface {
     private String kaupanTili;
 
     @Autowired
-    public Kauppa(VarastoInterface varasto,PankkiInterface pankki,ViitegeneraattoriInterface viitegeneraattori){
+    public Kauppa(VarastoInterface varasto, PankkiInterface pankki, ViitegeneraattoriInterface viitegeneraattori) {
         this.varasto=varasto;
         this.pankki=pankki;
         this.viitegeneraattori=viitegeneraattori;
